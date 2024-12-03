@@ -1,0 +1,13 @@
+@page
+@{
+    double radio = 5.0;  
+    double altura = 10.0; 
+    double perimetro = Application.Circulo.Perimetro(radio);
+    double area = Application.Circulo.Area(radio);
+    double volumen = Application.PrismaCircular.Volumen(area, altura);
+}
+
+<h1>Cálculo de Prisma Circular</h1>
+<p>El perímetro de la base de un Prisma Circular con radio de @(radio)cm es @(perimetro)cm</p>
+<p>El área de la base de un Prisma Circular con radio de @(radio)cm es @(area)cm²</p>
+<p>El volumen de un Prisma Circular con un área de @(area)cm² y una altura de @(altura)cm es @(volumen)cm³</p>
